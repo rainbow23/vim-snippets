@@ -130,6 +130,18 @@ snippet fun "function"
 	}
 	${0}
 
+snippet func "function simple"
+	func ${1:funcName}(${3} ${2:type}) {
+		${4}
+	}
+	${0}
+
+snippet funcr "function receiver"
+	func (${2:receiver} ${1:type}) ${3:funcName}(${5} ${4:type}) {
+		${6}
+	}
+	${0}
+
 snippet fum "method"
 	func (${1:receiver} ${2:type}) ${3:funcName}(${4}) ${5:error} {
 		${6}
@@ -157,7 +169,6 @@ snippet main "func main()"
 	func main() {
 		${1}
 	}
-	${0}
 
 snippet nw "new"
 	new(${0:type})
