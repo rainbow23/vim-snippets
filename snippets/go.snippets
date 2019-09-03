@@ -25,13 +25,13 @@ snippet app "append"
 	append(${1:slice}, ${0:value})
 
 snippet bo "bool"
-	bool
+	bool ${0}
 
 snippet by "byte"
-	byte
+	byte ${0}
 
 snippet bre "break"
-	break
+	break ${0}
 
 snippet cha "channel"
 	chan ${0:int}
@@ -64,8 +64,8 @@ snippet def "defer recover"
 		}
 	}()
 
-snippet in "int"
-	int
+snippet in "int "
+	int ${0}
 
 snippet imp "import"
 	import (
@@ -106,19 +106,16 @@ snippet if "if error not nil, return err"
 	${0}
 
 snippet fal "false"
-	false
+	false ${0}
 
 snippet ft "fallthrough"
-	fallthrough
-
-snippet flo "float"
-	float32
+	fallthrough ${0}
 
 snippet flo "float32"
-	float32
+	float32 ${0}
 
 snippet flo "float64"
-	float64
+	float64 ${0}
 
 snippet for "for loop simple"
 	for {
@@ -230,7 +227,7 @@ snippet sel "select { case default }"
 	}
 
 snippet st "string"
-	string
+	string ${0}
 
 snippet st "struct"
 	struct ${1:name} {
@@ -257,7 +254,7 @@ snippet spr "fmt.Sprintf"
 	${0}
 
 snippet tr "true"
-	true
+	true ${0}
 
 snippet go "goroutine named function"
 	go ${1:funcName}(${2})
